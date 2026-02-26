@@ -1,1 +1,332 @@
-index.html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Entreprise SOBAC</title>
+
+<style>
+/* ===== STYLE GLOBAL ===== */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f7fa;
+    color: #333;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+ 
+            
+/* ===== HEADER ===== */
+header {
+    background: linear-gradient(to right, #632c3c, #388a4a);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header .logo {
+    width: 120px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header .slogan {
+    font-size: 18px;
+    margin-bottom: 30px;
+    min-height: 60px; 
+}
+
+header .btn {
+    background-color: #ff6600;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 10px;
+    transition: 0.3s;
+}
+
+header .btn:hover {
+    background-color: #cc5200;
+    transform: scale(1.05);
+}
+
+/* ===== MENU ===== */
+nav {
+    background-color: #db5a60;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* ===== SECTIONS ===== */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.apropos {
+    background-color: #ffffff;
+    color: #333;
+}
+
+.galerie img {
+    width: 200px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/* ===== PRODUITS ===== */
+.produits {
+    background-color: #eef3f9;
+}
+
+.carte {
+    display: inline-block;
+    width: 260px;
+    margin: 20px;
+    padding: 15px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(48, 41, 41, 0.2);
+    transition: transform 0.3s, opacity 1s;
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.carte.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.carte img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.carte h3 {
+    margin: 10px 0;
+    color: #752b72;
+}
+
+.carte p {
+    font-size: 14px;
+}
+
+.prix {
+    color: #ff6600;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.carte button {
+    background-color: #773c53;
+    color: rgb(48, 27, 32);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.carte button:hover {
+    background-color: #5f253dec;
+}
+
+/* ===== CONTACT ===== */
+.contact {
+    background-color: #0d9919;
+    padding: 40px 20px;
+}
+
+.contact a {
+    display: inline-block;
+    margin: 10px;
+    background-color: #25d366;
+    color: rgb(25, 124, 91);
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.contact a.email {
+    background-color: #ff6600;
+}
+
+.contact a:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: #394858;
+    color: rgb(42, 145, 119);
+    padding: 15px;
+    text-align: center;
+}
+</style>
+</head>
+
+<body>
+
+<!-- MENU -->
+ 
+<nav>
+    <ul>
+        <li><a href="#accueil">🏛️ Accueil & Vision</a>
+        <li><a href="#produits">💻Produits</a></li>
+        <li><a href="#contact">📩Contact</a></li>
+    </ul>
+</nav>
+<img src="Images/jonathan.jpg" width="150"
+
+<!-- HEADER -->
+<header id="accueil">
+    
+    <h1>Bienvenue chez l’Entreprise SOBAC</h1>
+    <p class="slogan" id="typed-text"></p>
+    <a href="#produits" class="btn">Cliquez ici pour voir nos produits</a>
+</header>
+
+<!-- À PROPOS -->
+<section class="apropos">
+    <h2>À propos de notre entreprise</h2>
+    <p>
+        SOBAC est une entreprise professionnelle spécialisée dans la vente de téléphones modernes 
+        et de maillots de qualité supérieure. Nous garantissons des produits fiables, élégants 
+        et adaptés à tous les besoins.
+    </p>
+    <p>
+        Notre mission est d’offrir à nos clients des articles innovants à des prix compétitifs 
+        avec un service rapide et efficace. Votre confiance est notre motivation.
+    </p>
+</section>
+
+<!-- GALERIE -->
+<section class="galerie">
+    <h2>Galerie de nos produits</h2>
+    <img src="images/telephone1.jpg" alt="Téléphone 1">
+    <img src="images/telephone2.jpg" alt="Téléphone 2">
+    <img src="images/maillot1.jpg" alt="Maillot 1">
+    <img src="images/maillot2.jpg" alt="Maillot 2">
+</section>
+
+<!-- PRODUITS -->
+<section id="produits" class="produits">
+    <h2>Nos Produits</h2>
+    <div class="carte">
+        <img src="images/telephone1.jpg" alt="Téléphone Android">
+        <h3>Téléphone Android</h3>
+        <p>Smartphone performant avec batterie longue durée et appareil photo haute résolution.</p>
+        <p class="prix">Prix : 250$</p>
+        <button>Acheter maintenant</button>
+    </div>
+    <div class="carte">
+        <img src="images/telephone2.jpg" alt="Téléphone Premium">
+        <h3>Téléphone Premium</h3>
+        <p>Dernière génération avec écran AMOLED et sécurité renforcée.</p>
+        <p class="prix">Prix : 400$</p>
+        <button>Acheter maintenant</button>
+    </div>
+    <div class="carte">
+        <img src="images/maillot1.jpg" alt="Maillot Sportif">
+        <h3>Maillot Sportif</h3>
+        <p>Maillot confortable et respirant pour vos activités sportives.</p>
+        <p class="prix">Prix : 35$</p>
+        <button>Acheter maintenant</button>
+    </div>
+    <div class="carte">
+        <img src="images/maillot2.jpg" alt="Maillot Officiel">
+        <h3>Maillot Officiel</h3>
+        <p>Maillot élégant avec finition de haute qualité.</p>
+        <p class="prix">Prix : 50$</p>
+        <button>Acheter maintenant</button>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+    <h2>Contactez-nous</h2>
+    <a href="https://wa.me/243000000000" target="_blank">📱WhatsApp</a>
+    <a href="mailto:sobac@gmail.com" class="email">Email</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>&copy; 2026 Entreprise SOBAC - Tous droits réservés</p>
+</footer>
+
+<!-- ===== JAVASCRIPT ===== -->
+<script>
+// ===== TEXTE TYPÉ =====
+const phrases = [
+    "L’excellence, la qualité et la satisfaction de nos clients sont nos priorités.",
+    "Découvrez nos téléphones et maillots haut de gamme dès maintenant !",
+    "Nous travaillons chaque jour pour vous offrir le meilleur service possible."
+];
+let typedText = document.getElementById("typed-text");
+let phraseIndex = 0;
+let letterIndex = 0;
+function type() {
+    if (phraseIndex < phrases.length) {
+        if (letterIndex < phrases[phraseIndex].length) {
+            typedText.textContent += phrases[phraseIndex][letterIndex];
+            letterIndex++;
+            setTimeout(type, 50);
+        } else {
+            typedText.textContent += " "; 
+            phraseIndex++;
+            letterIndex = 0;
+            setTimeout(type, 500);
+        }
+    }
+}
+window.onload = type;
+
+// ===== ANIMATION SCROLL =====
+const cartes = document.querySelectorAll('.carte');
+function reveal() {
+    const windowHeight = window.innerHeight;
+    cartes.forEach(carte => {
+        const carteTop = carte.getBoundingClientRect().top;
+        if (carteTop < windowHeight - 100) {
+            carte.classList.add('show');
+        }
+    });
+}
+window.addEventListener('scroll', reveal);
+reveal(); // au chargement
+</script>
+
+</body>
+</html>
